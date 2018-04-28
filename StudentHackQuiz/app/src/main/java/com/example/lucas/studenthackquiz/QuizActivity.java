@@ -38,7 +38,7 @@ public class QuizActivity extends AppCompatActivity {
         firstChoice.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view){
+            public void onClick(View v){
                 if(firstChoice.getText()==questionAnswer){
                     score = score++;
                     updateScore(score);
@@ -48,7 +48,7 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
-        }//choice1
+        });//choice1
 
         secondChoice.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -62,11 +62,12 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
-        }//choice2
+        });//choice2
 
         thirdChoice.setOnClickListener(new View.OnClickListener(){
+
             @Override
-            public void onClick(View ){
+            public void onClick(View v){
                 if(thirdChoice.getText()==questionAnswer){
                     score = score++;
                     updateScore(score);
@@ -76,7 +77,7 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
-        }//choice3
+        });//choice3
     }
 
     private void updateQuestion(){
