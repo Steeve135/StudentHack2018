@@ -10,6 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.os.Vibrator;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.provider.Settings;
+import android.os.Vibrator;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -48,6 +55,8 @@ public class QuizActivity extends AppCompatActivity {
                     updateScore(score);
                     if (score==3){
                         setContentView(R.layout.quiz_solved);
+                        MyAlarm.mediaPlayer.stop();
+                        MyAlarm.v.cancel();
                     }
                     updateQuestion();
 
@@ -68,6 +77,8 @@ public class QuizActivity extends AppCompatActivity {
                     updateScore(score);
                     if (score==3){
                         setContentView(R.layout.quiz_solved);
+                        MyAlarm.mediaPlayer.stop();
+                        MyAlarm.v.cancel();
                     }
                     updateQuestion();
 
@@ -89,6 +100,8 @@ public class QuizActivity extends AppCompatActivity {
                     updateScore(score);
                     if (score==3){
                         setContentView(R.layout.quiz_solved);
+                        MyAlarm.mediaPlayer.stop();
+                        MyAlarm.v.cancel();
                     }
                     updateQuestion();
 
