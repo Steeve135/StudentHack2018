@@ -1,3 +1,7 @@
+/*
+  Most of the code used for our quiz is taken from Victor Wooding's youtube video on making
+  Android quizzes using Android Studio
+*/
 package com.example.lucas.studenthackquiz;
 
 import android.os.Bundle;
@@ -19,7 +23,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private String questionAnswer;
     private int score = 0;
-    private int qNumber = 0;
+    private int qNumber = (int)(Math.random() * ((29 - 0) + 1));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +51,7 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(QuizActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QuizActivity.this, "wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
             }
@@ -82,7 +86,7 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(QuizActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QuizActivity.this, "wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
             }
@@ -96,7 +100,11 @@ public class QuizActivity extends AppCompatActivity {
         thirdChoice.setText(possibleQuestions.getChoice3(qNumber));
 
         questionAnswer=possibleQuestions.getAnswer(qNumber);
-        qNumber++;
+        int holdQNumber = qNumber;
+        qNumber = (int)(Math.random() * ((29 - 0) + 1));
+        while(qNumber == holdQNumber){
+            qNumber = (int)(Math.random() * ((29 - 0) + 1));
+        }
     }
 
     private void updateScore(int points){
