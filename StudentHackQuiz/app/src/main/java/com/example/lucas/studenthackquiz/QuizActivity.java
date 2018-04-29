@@ -100,6 +100,6 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateScore(int points){
-        scoreView.setText(points);
+        scoreView.setText("" + points);
     }
 }
