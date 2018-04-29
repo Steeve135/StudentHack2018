@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class QuizActivity extends AppCompatActivity {
+public class QuizActivity extends MainActivity {
 
     private QuestionLibrary possibleQuestions = new QuestionLibrary();
 
