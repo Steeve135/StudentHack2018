@@ -4,32 +4,13 @@
             "outputFile": "C:\\Users\\lucas\\AndroidStudioProjects\\StudentHackQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\aed3343f77f942f629ffc36b271e7766\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.1.aar\\e48aec4f683e1bb7cadc10374b44488a\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "65",
                         "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\d625066a2e53123f9502df9e6def55fb\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
                     }
                 }
             ]

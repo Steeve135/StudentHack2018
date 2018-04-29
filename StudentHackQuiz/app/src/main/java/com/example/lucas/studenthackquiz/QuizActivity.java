@@ -39,9 +39,9 @@ public class QuizActivity extends AppCompatActivity {
         {
             @Override
             public void onClick(View v){
-                if(firstChoice.getText()==questionAnswer){
-                    score++;
-                    updateScore();
+                if(firstChoice.getText()== questionAnswer){
+                    score=score+1;
+                    updateScore(score);
                     updateQuestion();
 
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
@@ -55,16 +55,16 @@ public class QuizActivity extends AppCompatActivity {
 
         secondChoice.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
-                if(secondChoice.getText()==questionAnswer){
-                    score++;
-                    updateScore();
+            public void onClick(View v){
+                if(secondChoice.getText()== questionAnswer){
+                    score=score+1;
+                    updateScore(score);
                     updateQuestion();
 
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(QuizActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QuizActivity.this, "wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
             }
@@ -74,9 +74,9 @@ public class QuizActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v){
-                if(thirdChoice.getText()==questionAnswer){
-                    score++;
-                    updateScore();
+                if(thirdChoice.getText()== questionAnswer){
+                    score=score+1;
+                    updateScore(score);
                     updateQuestion();
 
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
@@ -99,7 +99,7 @@ public class QuizActivity extends AppCompatActivity {
         qNumber++;
     }
 
-    private void updateScore(){
-        scoreView.setText(score);
+    private void updateScore(int points){
+        scoreView.setText(points);
     }
 }
