@@ -46,6 +46,9 @@ public class QuizActivity extends AppCompatActivity {
                 if(firstChoice.getText()== questionAnswer){
                     score=score+1;
                     updateScore(score);
+                    if (score==3){
+                        setContentView(R.layout.quiz_solved);
+                    }
                     updateQuestion();
 
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
@@ -63,6 +66,9 @@ public class QuizActivity extends AppCompatActivity {
                 if(secondChoice.getText()== questionAnswer){
                     score=score+1;
                     updateScore(score);
+                    if (score==3){
+                        setContentView(R.layout.quiz_solved);
+                    }
                     updateQuestion();
 
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();
@@ -81,6 +87,9 @@ public class QuizActivity extends AppCompatActivity {
                 if(thirdChoice.getText()== questionAnswer){
                     score=score+1;
                     updateScore(score);
+                    if (score==3){
+                        setContentView(R.layout.quiz_solved);
+                    }
                     updateQuestion();
 
                     Toast.makeText(QuizActivity.this, "correct", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz_solved"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.lucas.studenthackquiz.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="314dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="203dp"
+            android:layout_height="108dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp"
+            android:text="Mission accomplished!"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+</LinearLayout>
