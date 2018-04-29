@@ -17,11 +17,13 @@ public class MyAlarm extends BroadcastReceiver {
     //the method will be fired when the alarm is triggerred
     @Override
     public void onReceive(Context context, Intent intent) {
-
+        Intent quiz = new Intent();
+        quiz.setClassName("com.example.lucas.studenthackquiz", "com.example.lucas.QuizActivity");
         //you can check the log that it is fired
         //Here we are actually not doing anything
         //but you can do any task here that you want to be done at a specific time everyday
-        Log.d("MyAlarmBelal", "Alarm just fired");
+        quiz.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(quiz);
     }
 
 }
